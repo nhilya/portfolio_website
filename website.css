@@ -1,0 +1,139 @@
+body /* Applies styles to the entire body of the document */ {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  font-family:Arial, Helvetica, sans-serif ; /* Specifies the font family for the text */
+  background: radial-gradient(circle, #6699ff, #e4a7f6, #6699ff);
+}
+
+.navbar /*Selects elements with the class "navbar"*/ {
+  position: fixed;
+  display: flex; /* Configures the container to use flexbox layout */
+  justify-content: center; /*Positions child elements with space between them */
+  align-items: center; /* Centers the child elements vertically */
+  background-color: #80808080; /* Sets the background color */
+  padding: 0; /* Adds padding around the content */
+  border-radius: 10px;
+  margin: 30px;
+  color: #2e302d; /* Sets the text color */
+  top: 0;
+  left: 0;
+  width: 96.9%;
+}
+.navbar ul{
+  padding-inline-start: 0px;
+}
+
+.nav-links /* Selects elements with the class"nav-links" */ {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  list-style: none; /* Removes default list styling (bullet points) */
+  display: flex; /* Configures the container to use flexbox layout */
+}
+
+.nav-links li /* Selects the list items within elements with the class "nav-links" */ {
+  padding: 0 10px; /* Adds padding to the left and right of each list item */
+}
+
+.nav-links a /* Selects anchor elements within elements with the class "nav-links" */ {
+  padding: 0 10px; /*Adds padding to the left and right of each other anchor element */
+  text-decoration: none; /*Removes the default underline styling*/
+  color: whitesmoke; /* Sets the text color */
+}
+
+.nav-links a:hover /* Applies styles to anchor elements when hovered */ {
+  color: #000000; /*Changes the text color on hover */
+  text-decoration: none; /* To remove underline on hover */
+}
+
+@media (max-width: 786px) /*Applies styles only when the viewport width is 786 pixels or less.*/ {
+  .nav-links /* Styles the navigation links on mobile view */ {
+    display: none; /* Hides the navigation links by default*/
+    flex-direction: column; /* Arranges the links in a column */
+    position: absolute; /* Positions the links absolutely within the viewport */
+    top: 70px; /* Sets the distance from the top of the viewport */
+    right: 0; /* Align the links to the right side of the viewport */
+    background-color: #333; /* Sets the background color of the mobile navigation */
+    width: 100%; /* Makes the mobile navigation full width */
+    padding: 20px; /* Adds padding to the mobile navigation */
+  }
+
+  .nav-links.show /* Displays the navigation links when the "show" class is applied */ {
+    display: flex;
+  }
+}
+
+.centered-container{ 
+  text-align: center;
+  padding: 15px;
+  border: 1px;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #b9b9b980;
+}
+
+.centered-container-header{
+  text-align: center;
+  padding: 15px;
+  border: 1px;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #b9b9b980;
+}
+
+.div-project-1{
+  flex-direction: row;
+  margin: 20px;
+  display: absolute; /* Declares this as the flex container */
+  justify-content: space-around; /* Distributes flex items with equal space around them horizontally */
+  align-items: center; /* Distributes flex items with equal space around them vertically */
+  background-color: #6699ff; /* Color background */
+  padding: 20px; /* Add padding around containers */
+  border-radius: 8px; /* Rounds off the edges */
+  box-shadow: 0 0 10px #0000001a; /* Add the slight shadow below */
+  text-align: center; /* Center the text horizontally */
+}
+
+.div-project-2{
+  margin: 20px;
+  display: absolute; /* Declares this as the flex container */
+  justify-content: space-around; /* Distributes flex items with equal space around them horizontally */
+  align-items: center; /* Distributes flex items with equal space around them vertically */
+  background-color: #e4a7f6; /* White background */
+  padding: 20px; /* Add padding around containers */
+  border-radius: 8px; /* Rounds off the edges */
+  box-shadow: 0 0 10px #0000001a; /* Add the slight shadow below */
+  text-align: center; /* Center the text horizontally */
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #808080;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2c0c0;
+}
