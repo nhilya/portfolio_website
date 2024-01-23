@@ -10,80 +10,90 @@
   <body>
     <div class="navbar">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#homebar" onclick="scrollToSection('homebar')">Home</a></li>
+        <li><a href="#section-about" onclick="scrollToSection('section-about')">About</a></li>
+        <li><a href="#my-projects" onclick="scrollToSection('my-projects')">Projects</a></li>
+        <li><a href="#contact-detail" onclick="scrollToSection('contact-detail')">Contact Me</a></li>
       </ul>
     </div>
 
-    <div class="centered-container-header">
-      <header>
-        <h1>Hello there!</h1>
-        <h3>I'm Nuha!<br>A software engineer noobs.</h3>
-        <h4>I am a learner that has driven by my own curiousity in problem-solving that a software engineer does. So, here I am, learning how to build a complete system. This website will consistently change alongside my knowledge grows throughout my bootcamp.</h4>
-      </header>
-    </div>
+    <main>
+      <div class="centered-container-header">
+        <header id="homebar">
+          <h1>Hello there!</h1>
+          <h3>I'm Nuha!<br>A software engineer noobs.</h3>
+          <h4>I am a learner that has driven by my own curiousity in problem-solving that a software engineer does. So, here I am, learning how to build a complete system. This website will consistently change alongside my knowledge grows throughout my bootcamp.</h4>
+        </header>
+      </div>
 
-    <div class="centered-container">
-      <section>
-        <article>
-          <h2>About Me</h2>
-          <p>I am a fresh graduate from Management & Science University in Bachelor in Computer Forensic. Recently I have completed my 9-months internship at Securities Commission Malaysia, which has taught and exposed me in IT Infrastructure management and cybersecurity fields. Have several skills in programming and theories in Digital Forensic and Cybersecurity developed enhanced throughout internship program.<br>Recently managed to get my Final Year Project thesis to be published in IEEE, developing a autonomous robot with no basic knowledge in robotics and engineering. I look forward for an opportunity implement both IT, law and digital forensic concepts with skills development in this industry.</p>
-        </article>
-      </section>
-    </div>
+      <div class="centered-container">
+        <section id="section-about">
+          <article>
+            <h2>About Me</h2>
+            <p>I am a fresh graduate from Management & Science University in Bachelor in Computer Forensic. Recently I have completed my 9-months internship at Securities Commission Malaysia, which has taught and exposed me in IT Infrastructure management and cybersecurity fields. Have several skills in programming and theories in Digital Forensic and Cybersecurity developed enhanced throughout internship program.<br>Recently managed to get my Final Year Project thesis to be published in IEEE, developing a autonomous robot with no basic knowledge in robotics and engineering. I look forward for an opportunity implement both IT, law and digital forensic concepts with skills development in this industry.</p>
+          </article>
+        </section>
+      </div>
 
-    <div class="centered-container">
-      <aside>
-        <h3>Projects</h3>
-          <div class="div-project-1">
-            <h4>My own personal website</h3>
-            <img src="icons8-html5.svg" alt="html_svg">
-            <img src="icons8-javascript.svg" alt="js_svg">
-          </div>  
+      <div class="centered-container">
+        <aside id="my-projects">
+          <h3>Projects</h3>
+            <div class="div-project-1">
+              <h4>My own personal website</h3>
+              <img src="icons8-html5.svg" alt="html_svg">
+              <img src="icons8-javascript.svg" alt="js_svg">
+            </div>  
 
-          <div class="div-project-2">
-            <h4>Nuha's Cafe Online Ordering System</h3>
-            <img src="icons8-html5.svg" alt="html_svg">
-            <img src="icons8-javascript.svg" alt="js_svg">
-          </div>
+            <div class="div-project-2">
+              <h4>Nuha's Cafe Online Ordering System</h3>
+              <img src="icons8-html5.svg" alt="html_svg">
+              <img src="icons8-javascript.svg" alt="js_svg">
+            </div>
 
-          <div class="div-project-1">
-            <h4>Don't know yet, still searching some ideas and inspirations.</h3>
-            <img src="icons8-html5.svg" alt="html_svg">
-            <img src="icons8-javascript.svg" alt="js_svg">
-          </div>
+            <div class="div-project-1">
+              <h4>Don't know yet, still searching some ideas and inspirations.</h3>
+              <img src="icons8-html5.svg" alt="html_svg">
+              <img src="icons8-javascript.svg" alt="js_svg">
+            </div>
 
-          <div class="div-project-2">
-            <h4>Don't know yet, still searching some ideas and inspirations.</h3>
-            <img src="icons8-html5.svg" alt="html_svg">
-            <img src="icons8-javascript.svg" alt="js_svg">
-          </div>
-      </aside>
-    </div>
+            <div class="div-project-2">
+              <h4>Don't know yet, still searching some ideas and inspirations.</h3>
+              <img src="icons8-html5.svg" alt="html_svg">
+              <img src="icons8-javascript.svg" alt="js_svg">
+            </div>
+        </aside>
+      </div>
 
-    <div class="centered-container">
-      <h4>Contact Me<h4>
-        <form action="#" method="post" id="subscriptionForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-    
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-    
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
-    
-          <button type="submit">Subscribe</button>
-        </form>
-    </div>
-    
+      <div class="centered-container">
+        <section id="contact-detail">
+          <h4>Contact Me<h4>
+            <form action="#" method="post" id="subscriptionForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required>
+        
+              <button type="submit">Subscribe</button>
+            </form>
+        </section>
+      </div>
+    </main>
+
     <div class="centered-container">
       <footer>
         <p>&copy; 2024 Nuha's Website</p>
-        <a href="https://www.linkedin.com/in/nuhailya/">LinkedIn</a>
-        <a href="mailto:nuhailya17400@gmail.com">Email</a>
+        
+        <a href="https://www.linkedin.com/in/nuhailya/" target="_blank">
+          <img src="linkedin.svg" alt="Nuha's LinkedIn">
+        </a>
+        
+        <a href="mailto:nuhailya17400@gmail.com">
+          <img src="mail-logo.svg" alt="Nuha's Email">
+        </a>
       </footer>
     </div>
   </body>

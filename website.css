@@ -137,3 +137,16 @@ button {
 button:hover {
   background-color: #c2c0c0;
 }
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+footer img {
+  width: 30px; /* Adjust the width to make the logos smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
